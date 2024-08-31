@@ -1,0 +1,9 @@
+[Unit]
+Description=Automatically adjust screen-brightness
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/auto-brightness
+
+[Install]
+WantedBy=multi-user.target
