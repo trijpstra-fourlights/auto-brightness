@@ -1,17 +1,18 @@
 pkgbase = auto-brightness
 	pkgdesc = A script to automatically adjust screen brightness based on ambient light
-	pkgver = 1.0.0
+	pkgver = 1.0.1
 	pkgrel = 1
 	url = https://github.com/trijpstra-fourlights/auto-brightness
 	arch = any
 	license = MIT
 	depends = bash
 	depends = awk
+	depends = iio-sensor-proxy
 	source = auto-brightness.sh
 	source = auto-brightness.service
 	source = auto-brightness.conf
 	sha256sums = 62358fd73d1934261e3259c3075b64605540058c0b9eea92cf240a3b8d5ebf1e
-	sha256sums = 96a519a558b1fea7daa01550a30767b9b48d2a0e285b16d90e422946c33ef9df
+	sha256sums = 30aa46466e0e531b7834618d4ff582cb25543bfc776d441b6ca320ed5bc7e05f
 	sha256sums = 4a2f4e4a331df6c2e3cda53b0cb38161fd5cff153253166d740d0c86b8d444a8
 
 pkgname = auto-brightness
