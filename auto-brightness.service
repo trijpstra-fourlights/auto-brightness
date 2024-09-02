@@ -1,11 +1,9 @@
 [Unit]
 Description=Automatically adjust screen-brightness
-After=iio-sensor-proxy.service
-Requires=iio-sensor-proxy.service
-DependsOn=iio-sensor-proxy.service
 
 [Service]
 Type=simple
+ExecStartPre=/usr/lib/auto-brightness/wait-for-als-sensor.sh
 ExecStart=/usr/bin/auto-brightness
 
 [Install]
